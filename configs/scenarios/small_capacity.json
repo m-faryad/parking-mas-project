@@ -1,0 +1,61 @@
+{
+  "name": "small_capacity",
+  "description": "High demand against reduced capacity (synthetic).",
+  "seed": 42,
+  "duration_min": 720,
+  "sample_interval_min": 10,
+  "base_arrivals_per_hour": 60,
+  "peak_factor": 1.6,
+  "peak_times_min": [
+    120.0,
+    420.0
+  ],
+  "peak_width_min": 60.0,
+  "demand_variation": 0.15,
+  "mean_duration_min": 180.0,
+  "duration_cv": 0.8,
+  "min_duration_min": 15.0,
+  "max_duration_min": 600.0,
+  "ev_share": 0.12,
+  "accessible_share": 0.04,
+  "patience_mean_min": 10.0,
+  "walk_pref_min_m": 500.0,
+  "walk_pref_max_m": 1500.0,
+  "car_parks": [
+    {
+      "name": "North Car Park",
+      "standard": 35,
+      "ev": 4,
+      "accessible": 2,
+      "gate_distance_m": 250,
+      "walk_base_m": 420,
+      "pitch_m": 4.0
+    },
+    {
+      "name": "Central Car Park",
+      "standard": 30,
+      "ev": 3,
+      "accessible": 2,
+      "gate_distance_m": 450,
+      "walk_base_m": 200,
+      "pitch_m": 4.0
+    },
+    {
+      "name": "Multi-storey",
+      "standard": 45,
+      "ev": 5,
+      "accessible": 3,
+      "gate_distance_m": 650,
+      "walk_base_m": 90,
+      "pitch_m": 4.0
+    }
+  ],
+  "w_drive": 1.0,
+  "w_walk": 1.5,
+  "w_congestion": 300.0,
+  "ev_bonus": 400.0,
+  "accessible_bonus": 400.0,
+  "accessible_walk_multiplier": 3.0,
+  "emission_g_per_km": 150.0,
+  "idle_g_per_min": 20.0
+}

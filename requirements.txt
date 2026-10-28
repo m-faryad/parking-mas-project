@@ -1,0 +1,8 @@
+# Tested together on Python 3.13 (Linux). Supported range: Python >= 3.10.
+numpy>=2.0,<3
+pandas>=2.2,<4
+scipy>=1.13,<2
+matplotlib>=3.8,<4
+plotly>=5.20,<8
+streamlit>=1.50,<2
+pytest>=8

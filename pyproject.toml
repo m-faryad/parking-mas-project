@@ -1,0 +1,24 @@
+[project]
+name = "parking-mas"
+version = "1.0.0"
+description = "Agent-based intelligent car parking management simulation and analytics (synthetic data)"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=2.0,<3", "pandas>=2.2,<4", "scipy>=1.13,<2", "matplotlib>=3.8,<4",
+  "plotly>=5.20,<8", "streamlit>=1.50,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "tests"]
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 130
+target-version = "py310"
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501", "B905", "E402", "UP037"]
